@@ -1,0 +1,25 @@
+<h3>Daftar Kelas</h3>
+<hr>
+<a href="/admin/kelas/add" class="btn btn-sm btn-primary">Tambah Kelas</a>
+<div class="mb-2"></div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Kode</th>
+            <th scope="col">Nama</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each kelas}}
+        <tr>
+            <td>{{ kode }}</td>
+            <td>{{ nama }}</td>
+            <td>
+                <a href="/admin/kelas/edit/{{ id }}">Edit</a>
+                <a href="/admin/kelas/{{ id }}/delete" class="text-danger">Hapus</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+<h3>Tambah Kamar</h3>
+<hr>
+<form action="/admin/kelas/{{ kelas.id }}/update" method="post">
+    <div class="form-group">
+        <label for="inputKode">Kode</label>
+        <input type="text" name="kode" value="{{ kelas.kode }}" placeholder="Masukkan Kode Kelas" id="inputKode" class="form-control col-4">
+    </div>
+    <div class="form-group">
+        <label for="inputNama">Nama</label>
+        <input type="text" name="nama" value="{{ kelas.nama }}" placeholder="Masukkan Nama Kelas" id="inputNama"
+            class="form-control col-4">
+    </div>
+    <button type="submit" class="btn btn-primary">Simpan</button>
+    <a href="/admin/kelas" class="btn btn-default">Kembali</a>
+</form>
